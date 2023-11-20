@@ -1,0 +1,160 @@
+/* pour tout */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center-align the content inside the body */
+}
+/* style global */
+h1 {
+    font-size: 2em;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 300px;
+    grid-gap: 100px;
+    margin: 0 auto; /* centrer horizontalement */
+}
+
+/* Dans les cases  */
+.container > div,
+.separation,
+.sous-container {
+    display: grid;
+    grid-auto-rows: min-content;
+    grid-gap: 15px;
+    text-align: center;
+    position: relative; /* position relative pour que ça s'emplir */
+    z-index: 1; /* >0 */
+}
+
+.photo,
+.Etat,
+.Nom {
+    grid-column: span 2;
+    color: #333; 
+    padding: 10px;
+}
+.Disponibilité_libre,
+.Disponibilité_occupe,
+.footer,
+.back,
+.back_bis,
+.occupant,
+.photo_detail,
+.etat_detail,
+.type_detail,
+.race_detail,
+.lieu_detail,
+.Disponibilité_libre_bis {
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Un peu plus précis */
+.container > div,
+.separation,
+.sous-container,
+.photo,
+.Disponibilité_libre,
+.Disponibilité_occupe,
+.footer,
+.back,
+.back_bis,
+.occupant {
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Etat {
+    background-color: #333;
+    color: #fff;
+    grid-column: span 2;
+    padding: 10px;
+}
+
+.Nom {
+    grid-column: span 2;
+    color: #333; 
+}
+,
+.Disponibilité_libre,
+.Disponibilité_occupe {
+    color: #fff;
+    padding: 10px;
+}
+
+.Nom {
+    grid-column: span 2;
+    color: #333; 
+    padding: 10px;
+}
+
+
+.Disponibilité_libre {
+    background-color: #5cb85c;
+}
+
+.Disponibilité_occupe {
+    background-color: #d9534f;
+}
+
+.footer,
+.back,
+.back_bis,
+.occupant {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+/* section Animal  */
+.animal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.titre_animal {
+    grid-column: span 3;
+    text-align: center;    
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* vue détaillée */
+.description,
+.photo_detail,
+.etat_detail,
+.type_detail,
+.race_detail,
+.lieu_detail {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #706d6d;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.centrer {
+    text-align: center;
+}
+
+/* couleurs*/
+.Disponibilité_libre_bis {
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+.Disponibilité_occupe_bis,
+.occupant {
+    background-color: #d9534f;
+    color: #fff;
+}
